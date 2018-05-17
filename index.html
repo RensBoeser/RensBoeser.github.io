@@ -27,4 +27,8 @@ title: Rens Boeser
             </div>
         </div>
     </a>
+
+    {% for repository in site.github.public_repositories %}
+    * [{{ repository.name }}]({{ repository.html_url }})
+    {% endfor %}
 </div>
