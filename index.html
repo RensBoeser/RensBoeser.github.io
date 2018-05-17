@@ -2,15 +2,8 @@
 layout: default
 title: Rens Boeser
 ---
-<div class="multiple-items-full">
+<div>
     {% for repository in site.github.public_repositories %}
-    <a class="item-full" href="{{ repository.html_url }}">
-        <div class="mask-layer">
-            <div style="margin: auto;">
-                <h1>{{ repository.name }}</h1>
-                <p>subtitel</p>
-            </div>
-        </div>
-    </a>
+        {{ repository | jsonify }}
     {% endfor %}
 </div>
