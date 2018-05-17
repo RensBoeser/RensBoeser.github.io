@@ -27,8 +27,10 @@ title: Rens Boeser
             </div>
         </div>
     </a>
-
-    {% for repository in site.github.public_repositories %}
-    * [{{ repository.name }}]({{ repository.html_url }})
-    {% endfor %}
 </div>
+{% for repository in site.github.public_repositories %}
+<div>
+    <h1>{{ repository.name }}</h1>
+    <a href="{{ repository.html_url }}">Go to repository</a>
+</div>
+{% endfor %}
