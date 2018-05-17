@@ -4,6 +4,11 @@ title: Rens Boeser
 ---
 <div>
     {% for repository in site.github.public_repositories %}
-        {{ repository | jsonify }}
+        <div>
+            <h1>{{ repository.name }}</h1>
+            <h2>{{ repository.description }}</h2>
+            <p>Created at: {{ repository.created_at }}</p>
+            <p>Last updated: {{ repository.updated_at }}</p>
+        </div>
     {% endfor %}
 </div>
