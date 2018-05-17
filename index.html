@@ -10,7 +10,7 @@ title: Rens Boeser
             <p>Created at: {{ repository.created_at }}</p>
             <p>Last updated: {{ repository.updated_at }}</p>
             {% for contributor in repository.contributors_url %}
-            <p>Contributors: {{ repository | jsonify }}</p>
+            <p>Contributors: {{ contributor }}</p>
             {% endfor %}
         </div>
     {% endfor %}
