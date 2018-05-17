@@ -12,7 +12,7 @@ title: Rens Boeser
             <!--{% for contributor in repository.contributors_url[0] %}-->
             <!--<p>Contributors: {{ contributor }}</p>-->
             <!--{% endfor %}-->
-            <p>Contributors: {{repository.contributors_url[0]}}</p>
+            <p>Contributors: {{repository.contributors_url.data}}</p>
         </div>
     {% endfor %}
 </div>
