@@ -19,6 +19,7 @@ body {
 .item-full {
   display: flex;
   height: 130px;
+  background: #dddddd;
 
   text-align: center;
   color: white;
@@ -37,15 +38,4 @@ body {
   display: flex;
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-}
-
-#item-1 {
-  background: url("https://www.colourbox.com/preview/3684893-anti-drug-concept-with-businessman.jpg");
-  background-size: 100%;
-}
-#item-2 {
-  background: #dddddd;
-}
-#item-3 {
-  background: #333333;
 }

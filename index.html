@@ -3,34 +3,14 @@ layout: default
 title: Rens Boeser
 ---
 <div class="multiple-items-full">
-    <a class="item-full" id="item-1">
+    {% for repository in site.github.public_repositories %}
+    <a class="item-full" href="{{ repository.html_url }}">
         <div class="mask-layer">
             <div style="margin: auto;">
-                <h1>item 1</h1>
-                <p>subtitel item</p>
+                <h1>{{ repository.name }}</h1>
+                <p>subtitel</p>
             </div>
         </div>
     </a>
-    <a class="item-full" id="item-2">
-        <div class="mask-layer">
-            <div style="margin: auto;">
-                <h1>item 2</h1>
-                <p>subtitel item</p>
-            </div>
-        </div>
-    </a>
-    <a class="item-full" id="item-3">
-        <div class="mask-layer">
-            <div style="margin: auto;">
-                <h1>item 3</h1>
-                <p>subtitel item</p>
-            </div>
-        </div>
-    </a>
+    {% endfor %}
 </div>
-{% for repository in site.github.public_repositories %}
-<div>
-    <h1>{{ repository.name }}</h1>
-    <a href="{{ repository.html_url }}">Go to repository</a>
-</div>
-{% endfor %}
