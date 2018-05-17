@@ -1,0 +1,51 @@
+body {
+  font-family: "Century Gothic";
+}
+
+
+.multiple-items-full {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 80px auto;
+  transition: 0.15s;
+}
+
+.multiple-items-full:hover {
+  margin: 20px auto;
+  transition: 0.15s;
+}
+
+.item-full {
+  display: flex;
+  height: 130px;
+
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+
+  transition: 0.15s;
+}
+
+.item-full:hover {
+  height: 250px;
+  transition: 0.15s;
+}
+
+.mask-layer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+
+#item-1 {
+  background: url("https://www.colourbox.com/preview/3684893-anti-drug-concept-with-businessman.jpg");
+  background-size: 100%;
+}
+#item-2 {
+  background: #dddddd;
+}
+#item-3 {
+  background: #333333;
+}
